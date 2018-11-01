@@ -3,7 +3,8 @@
     "version": "0.1",
     "description": "Adds buttons in Gmail to link to CRM",
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "storage"
     ],
     "content_scripts": [
 	    {

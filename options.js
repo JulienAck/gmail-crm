@@ -1,10 +1,8 @@
 // Saves options to chrome.storage
 function save_options() {
-  var url_0_label = document.getElementById('url_0_label').value;
-  var url_0_href  = document.getElementById('url_0_href').value;
+  var link_list = document.getElementById('link-list').value;
   chrome.storage.sync.set({
-    url_0_label: url_0_label,
-    url_0_href: url_0_href
+    link_list: link_list,
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
@@ -20,11 +18,10 @@ function save_options() {
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get({
-    url_0_label: '',
-    url_0_href: ''
+    link_list: '',
   }, function(items) {
-    document.getElementById('url_0_label').value = items.url_0_label;
-    document.getElementById('url_0_href').value  = items.url_0_href;
+    if (items.link_list.length==0) items.link_list='All conversations,mail.google.com/mail/u/0/#search/%%EMAIL%%';
+    document.getElementById('link-list').value = items.link_list;
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

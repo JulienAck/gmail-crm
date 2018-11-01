@@ -1,4 +1,6 @@
 function findEmailBlocks() {
+	// Adds links on the side of the sender's email address in Gmail
+	
 	let senderBlock = document.querySelectorAll('[class="iw"]');
 	if (senderBlock[0] != undefined) {
 		let spanList = senderBlock[0].getElementsByTagName("span");

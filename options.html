@@ -4,8 +4,11 @@
 <body>
 	<h1>Gmail CRM Options</h1>
 	<h2>Custom links</h2>
-	<br /><b>Label</b> <input type="text" id="url_0_label" />
-	<br /><b>Href</b> https://<input type="text" id="url_0_href" /> (put %%EMAIL%% where you want the email to be set)
+	insert comma separated values 
+	<br/>"label","href"
+	<br/>where <i>label</i> will be displayed next to the email of the sender and will link to https://<i>href</i> after replacing %%EMAIL%% by the actual email of the sender and adding https:// at the beggining of the url. Eg:
+	<br/>"All conversations","mail.google.com/mail/u/0/#search/%%EMAIL%%"
+	<br/><textarea id="link-list"></textarea>
 
 	<div id="status"></div>
 	<button id="save">Save</button>

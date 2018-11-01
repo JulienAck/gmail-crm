@@ -21,7 +21,7 @@ function getStorageGmailCrmLinkList() {
 		r = result.link_list;
 		var tempArray = r.split("\n");
 		for (let i = 0; i < tempArray.length; i++) {
-			linkList.push(tempArray[i].split(","));
+			linkList.push(tempArray[i].split("|"));
 		}
 		findEmailBlocks(linkList);
 	});

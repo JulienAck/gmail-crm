@@ -1,0 +1,38 @@
+body {
+    background-color:#ddd;
+    margin:none;
+    padding:none;
+    font-family: Helvetica;
+    font-size:1em;
+    color:#333;
+}
+.page {
+	background-color:#eee;
+	max-width:1000px;
+	margin:50px auto 50px auto;
+	padding:50px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	box-shadow:0px 1px #aaa;
+}
+textarea {
+	width:100%;
+	min-height:200px;
+	font-size:1.1em;
+}
+#status {
+	width:100%;
+	font-size:1.4em;
+	color:#666;
+	background:#aaa;
+	text-align:center;
+	padding:5px;
+	display:none;
+}
+#save {
+	width:100%;
+	height:50px;
+	font-size:1.6em;
+	background:#c83e2c;
+	border:none;
+}

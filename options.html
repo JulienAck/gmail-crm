@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><title>Gmail CRM Options</title></head>
+<head>
+	<title>Gmail CRM Options</title>
+	<link rel="stylesheet" type="text/css" href="options.css">
+</head>
 <body>
-	<h1>Gmail CRM Options</h1>
-	<h2>Custom links</h2>
-	insert comma separated values 
-	<br/>"label","href"
-	<br/>where <i>label</i> will be displayed next to the email of the sender and will link to https://<i>href</i> after replacing %%EMAIL%% by the actual email of the sender and adding https:// at the beggining of the url. Eg:
-	<br/>"All conversations","mail.google.com/mail/u/0/#search/%%EMAIL%%"
-	<br/><textarea id="link-list"></textarea>
+	<div class="page">
+		<h1>Gmail CRM Options</h1>
+		<h2>Custom links</h2>
+		<div id="status"></div>
+		<br/><textarea id="link-list"></textarea>
 
-	<div id="status"></div>
-	<button id="save">Save</button>
+		<button id="save">Save</button>
 
+		<br/><br/>Insert pipe ('|') separated values like this: "label_value|href_value" where href_value can contain the %%EMAIL%% parameter that shall be replaced by the actual email of the sender.
+		<br/>Example: "All conversations|mail.google.com/mail/u/0/#search/%%EMAIL%%"
+		<br/><br/><i>Label</i> will be displayed next to the email of the sender and will link to https://<i>href</i> after replacing %%EMAIL%% by the actual email of the sender and adding https:// at the beggining of the url.
+	</div>
 	<script src="options.js"></script>
 </body>
 </html>

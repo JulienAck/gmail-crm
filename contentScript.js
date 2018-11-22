@@ -1,17 +1,22 @@
 function findEmailBlocks(linkList) {
-	let emailAddressBloc = document.querySelectorAll('[class="gs"]')[0].querySelectorAll('[class="iw"]')[0].querySelectorAll('[email]')[0];
-	emailAddress=emailAddressBloc.getAttribute('email');
-	if (emailAddress != undefined) {
-		for (let i = 0 ; i<linkList.length; i++) {
-			var linkToCrm = document.createElement('a');
-			let hrefValue = linkList[i][1];;
-			if (hrefValue.indexOf('%%EMAIL%%')>-1) hrefValue = hrefValue.replace('%%EMAIL%%',emailAddress);
-			linkToCrm.setAttribute('href','https://'+hrefValue);
-			linkToCrm.textContent = linkList[i][0];
-			linkToCrm.setAttribute('style','margin:0 0 0 10px;');
-			emailAddressBloc.parentNode.appendChild(linkToCrm);
-		}
-	} 
+	let emailAddressBlocs = document.querySelectorAll('[class="gD"]');
+	console.log('email blocs count '+emailAddressBlocs.length);
+	for (let j=0; j<emailAddressBlocs.length; j++) {
+		var emailAddress = emailAddressBlocs[j].getAttribute('email');
+		console.log('email bloc '+emailAddress);
+		if (emailAddress != undefined) {
+			for (let i = 0 ; i<linkList.length; i++) {
+				var linkToCrm = document.createElement('a');
+				let hrefValue = linkList[i][1];;
+				if (hrefValue.indexOf('%%EMAIL%%')>-1) hrefValue = hrefValue.replace('%%EMAIL%%',emailAddress);
+				linkToCrm.setAttribute('href','https://'+hrefValue);
+				linkToCrm.textContent = linkList[i][0];
+				linkToCrm.setAttribute('style','margin:0 0 0 10px;');
+				emailAddressBlocs[j].parentNode.appendChild(linkToCrm);
+			}
+		} 
+	}
+	
 }
 
 function getStorageGmailCrmLinkList() {

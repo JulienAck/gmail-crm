@@ -10,7 +10,7 @@
 	    {
 		    "matches": ["https://mail.google.com/*"],
 		    "run_at": "document_idle",
-			"js": ["contentScript.js"]
+			  "js": ["contentScript.js"]
   	 	}
    	],
     "options_page": "options.html",

@@ -22,7 +22,7 @@ function restore_options() {
   chrome.storage.sync.get({
     link_list: '',
   }, function(items) {
-    if (items.link_list.length==0) items.link_list='All conversations,mail.google.com/mail/u/0/#search/%%EMAIL%%';
+    if (items.link_list.length==0) items.link_list='All conversations|mail.google.com/mail/u/0/#search/%%EMAIL%%';
     document.getElementById('link-list').value = items.link_list;
   });
 }

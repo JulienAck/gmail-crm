@@ -26,5 +26,7 @@ function restore_options() {
     document.getElementById('link-list').value = items.link_list;
   });
 }
+
+// Event listeners
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);

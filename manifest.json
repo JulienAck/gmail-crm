@@ -1,6 +1,6 @@
   {
     "name": "Gmail CRM",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Adds buttons in Gmail to link to CRM",
     "permissions": [
       "activeTab",

@@ -8,4 +8,4 @@ You can configure the links in the options, so you're just on click away from "m
 
 Links are always prefixed with "https://" to avoid sending email adresses on http.
 
-You can install i=directly from https://chrome.google.com/webstore/detail/gmail-crm/aebimappkdljnfhalihkdoogcgkaeimf
+You can install directly from https://chrome.google.com/webstore/detail/gmail-crm/aebimappkdljnfhalihkdoogcgkaeimf

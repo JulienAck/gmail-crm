@@ -7,3 +7,5 @@ Specify a set of links to your CRM that will be displayed next to the sender car
 You can configure the links in the options, so you're just on click away from "mycrm.com/admin/user/email=johndoe@somewhere.com" or"mycrm.com/admin/user/name=john doe" and don't have to make a damn copy/paste to the search engine of your CRM.
 
 Links are always prefixed with "https://" to avoid sending email adresses on http.
+
+You can install i=directly from https://chrome.google.com/webstore/detail/gmail-crm/aebimappkdljnfhalihkdoogcgkaeimf
